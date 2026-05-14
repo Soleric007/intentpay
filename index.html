@@ -841,7 +841,7 @@ main{
   .deals-scroll{
     flex:0 0 auto;
     overflow:visible;
-    padding:0 14px 10px;
+    padding:0 14px 116px;
   }
   .dc{padding:14px 16px}
   /* Detail panel → bottom sheet */
@@ -860,6 +860,16 @@ main{
     padding:10px 14px;
     padding-bottom:max(10px,env(safe-area-inset-bottom));
   }
+  .chips{
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    overflow-y:hidden;
+    margin-bottom:7px;
+    padding-bottom:2px;
+    scrollbar-width:none;
+  }
+  .chips::-webkit-scrollbar{display:none}
+  .chip{flex:0 0 auto}
   .page-body {padding:0 14px 14px}
   /* Toasts full-width at bottom */
   #toasts{bottom:72px;right:10px;left:10px}
